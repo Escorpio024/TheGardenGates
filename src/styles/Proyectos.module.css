@@ -1,0 +1,127 @@
+/* Contenedor principal de la página */
+.container {
+    height: auto; /* Altura automática que se ajusta al contenido */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    padding-top: 10vh; /* Agrega un espacio superior */
+    padding-bottom: 20vh; /* Agrega un espacio inferior */
+  }
+  
+  
+  
+  /* Estilos para el contenido principal */
+  .main {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    width: 90%; /* Asegura que el contenido ocupe todo el ancho disponible */
+    padding: 20px; /* Espaciado adicional alrededor del contenido */
+  }
+  
+  /* Título principal */
+  .title {
+    font-size: 3rem; /* Tamaño grande para el título */
+    margin: 0; /* Sin margen alrededor del título */
+    color: #333; /* Color oscuro para el texto */
+  }
+  
+  /* Descripción o subtítulo */
+  .description {
+    font-size: 1.2rem; /* Tamaño mediano para la descripción */
+    margin: 20px 0; /* Margen vertical de 20px */
+    color: #666; /* Color gris claro para el texto */
+  }
+  
+  /* Contenedor de las tarjetas de proyectos */
+  .grid {
+    width: 80%;
+    margin: 0 auto; /* Centrará el contenedor grid horizontalmente */
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias líneas si es necesario */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas dentro del grid */
+  }
+  
+  
+  /* Tarjeta de proyecto */
+  .card {
+    background: #fff; /* Fondo blanco para las tarjetas */
+    border: 1px solid #ddd; /* Borde gris claro alrededor de las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 300px; /* Ancho fijo para las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de las tarjetas */
+    cursor: pointer; /* Cambiar el cursor a una mano al pasar por encima */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para el color de fondo y la transformación */
+  }
+  
+  .card:hover {
+    background-color: #f9f9f9; /* Color de fondo al pasar el ratón sobre la tarjeta */
+    transform: scale(1.02); /* Agrandar ligeramente la tarjeta al pasar el ratón */
+  }
+  
+  /* Estilos para el modal */
+  .modal {
+    position: fixed; /* Fija el modal en la ventana */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el modal */
+    display: flex;
+    justify-content: center; /* Centra el contenido del modal horizontalmente */
+    align-items: center; /* Centra el contenido del modal verticalmente */
+  }
+  
+  .modalContent {
+    background: #fff; /* Fondo blanco para el contenido del modal */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 80%;
+    max-width: 600px; /* Ancho máximo del modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenido del modal */
+  }
+  
+  /* Botón para cerrar el modal */
+  .closeButton {
+    background: #007bff; /* Color de fondo del botón */
+    border: none;
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambiar el cursor a una mano al pasar por encima */
+    font-size: 1rem; /* Tamaño del texto del botón */
+    margin-top: 20px; /* Espacio superior adicional */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+  }
+  
+  .closeButton:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón sobre el botón */
+  }
+  
+  /* Estilos para el pie de página */
+  .footer {
+    background-color: #0a5700; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    position: fixed; /* Fijar el pie de página en la parte inferior */
+    bottom: 0; /* Alinearlo en la parte inferior */
+    width: 100%; /* Asegurar que ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegurar que esté sobre otros elementos */
+  }
+
+  .footer a{
+    color: #fff;
+  }
+  
+  /* Estilos para la barra de búsqueda */
+  .searchBar {
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para la barra de búsqueda */
+    padding: 10px; /* Espaciado interno */
+    margin: 20px 0; /* Margen vertical */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+  }
+  

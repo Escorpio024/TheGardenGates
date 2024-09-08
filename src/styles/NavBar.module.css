@@ -1,0 +1,116 @@
+/* Contenedor principal del NavBar */
+.nav {
+    background-color: #0a5700; /* Color de fondo */
+    padding: 10px 20px; /* Espaciado interno */
+    position: fixed; /* Fijar el Navbar en la parte superior */
+    top: 0; /* Alinearlo en la parte superior */
+    left: 0; /* Alinearlo a la izquierda */
+    width: 100%; /* Asegurar que ocupe todo el ancho de la pantalla */
+    z-index: 1000; /* Asegurar que esté sobre otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre el logo/título y los enlaces */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para separar visualmente */
+}
+
+/* Contenedor para el logo y título */
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo de la app */
+.logo {
+    height: 50px;
+    width: 50px; /* Ajusta según el tamaño deseado */
+    margin-right: 10px; /* Espaciado entre el logo y el título */
+}
+
+
+/* Título de la app */
+.title {
+    color: white;
+    font-size: 1.5rem; /* Tamaño del texto del título */
+    margin: 0; /* Quitar margen */
+}
+
+/* Lista de navegación */
+.navList {
+    list-style: none; /* Quitar viñetas */
+    padding: 0; /* Quitar espaciado */
+    margin: 0; /* Quitar margen */
+    display: flex; /* Alinear elementos en una fila */
+    justify-content: space-around; /* Espaciado uniforme entre elementos */
+    flex-grow: 1; /* Asegurar que la lista ocupe el espacio disponible */
+}
+
+/* Elementos de la lista de navegación */
+.navItem {
+    margin: 0 15px; /* Espaciado horizontal entre elementos */
+    position: relative; /* Necesario para el menú desplegable */
+}
+
+/* Enlaces en el NavBar */
+.navItem a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 1rem; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    transition: color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+/* Efecto hover en los enlaces */
+.navItem a:hover {
+    color: #ddd; /* Color del texto al pasar el ratón */
+}
+
+/* Botón de perfil */
+.profileButton {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    font-size: 1rem; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    cursor: pointer; /* Cursor de puntero */
+    position: relative; /* Necesario para el menú desplegable */
+}
+
+/* Menú desplegable */
+.dropdownMenu {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 100%; /* Coloca el menú justo debajo del botón */
+    right: 0; /* Alineación a la derecha */
+    background-color: #333; /* Fondo del menú */
+    border: 1px solid #ddd; /* Borde del menú */
+    border-radius: 4px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column; /* Elementos en columna */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    padding: 0; /* Quitar espaciado interno */
+    margin: 0; /* Quitar margen */
+}
+
+/* Elementos del menú desplegable */
+.dropdownItem {
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    cursor: pointer; /* Cursor de puntero */
+    border-bottom: 1px solid #ddd; /* Separador entre elementos */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+/* Quitar borde del último elemento */
+.dropdownItem:last-child {
+    border-bottom: none; 
+}
+
+/* Efecto hover en los elementos del menú desplegable */
+.dropdownItem:hover {
+    background-color: #444; /* Fondo del elemento al pasar el ratón */
+}
+
+/* Contenedor de contenido para asegurar que no se solape con el Navbar */
+.content {
+    padding-top: 60px; /* Espacio suficiente para que el contenido no quede oculto debajo del Navbar */
+}

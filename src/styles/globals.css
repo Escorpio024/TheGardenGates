@@ -1,16 +1,126 @@
-html,
 body {
-  padding: 0;
+  font-family: 'roboto', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  background-color: rgba(46, 232, 92, 0.226);
+  color: #333;
+}
+
+h1, h2 {
+font-family: Baskerville, serif; 
+  color: #006400;
 }
 
 a {
-  color: inherit;
+  color: #006400;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #006400;
+  border-color: #006400;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.title {
+  margin: 0;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Opcional: Si deseas aplicar la fuente a clases específicas con diferentes pesos */
+.pixelify-sans-regular {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: 400;
+}
+
+.pixelify-sans-bold {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: 700;
 }
